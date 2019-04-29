@@ -14,7 +14,7 @@ object FunctionExamples extends App {
   println(s"My favorite donut is $favoriteDonut")
 
   /**
-    * Function without paranthesis
+    * Function without parenthesis
     */
 
   def leastFavoriteDonut = "Plain Donut"
@@ -31,5 +31,27 @@ object FunctionExamples extends App {
   }
 
   //printDonutSalesReport()
+
+  /**
+    * Function with parameters no return type
+    */
+
+  def calculateDonutCost(donutName: String, quantity: Int): Unit = {
+    println(s"Calculating cost for $donutName, quantity = ${2.50 * quantity}")
+  }
+
+  //calculateDonutCost("Vanilla Donut", 100)
+
+  /**
+    * ... Adding default values to function parameters
+    */
+
+  def calculateDonutCost2(donutName: String, quantity: Int, couponCode: String = "NO CODE"): Unit = {
+    println(s"Calculating cost for $donutName, quantity = ${2.50 * quantity}, couponCode = $couponCode")
+  }
+
+  calculateDonutCost2("Vanilla Donut", 100)
+  calculateDonutCost2("Vanilla Donut", 100, "Coupon_1234")
+
 
 }
