@@ -1,4 +1,4 @@
-package com.allaboutscala.chapter.one.functions
+package com.allaboutscala.chapter.three.functions
 
 object FunctionExamples extends App {
 
