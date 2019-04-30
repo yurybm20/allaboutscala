@@ -1,6 +1,6 @@
 package com.allaboutscala.chapter.three.functions
 
-object FunctionWithOption {
+object FunctionWithOption extends App{
 
   /**
     * ... Using Option in function parameters
